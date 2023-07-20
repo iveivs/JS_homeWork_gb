@@ -2,15 +2,14 @@
 // Задача 1
 // let num1 = Number(prompt('Введите число'))
 // let num2 = Number(prompt('Введите число'))
-// num1 >= 1 ? console.log(true) :  console.log(false);
-// num2 >= 3 ? console.log(true) :  console.log(false);
-// console.log(num1, num2);
+// num1 >= 1 ? console.log(true) : console.log(false);
+// num2 >= 3 ? console.log(true) : console.log(false);
 
 
 // Задача 2
 // let test = true
 // test ? console.log('+++') : console.log('---')
-// console.log(test);
+
 
 // Задача 3
 // const day = 14
@@ -24,12 +23,13 @@
 
 // Задача 4
 
+// ПЕРВОЕ РЕШЕНИЕ
+
 // let inputNum = Number(prompt('Введите число не больше 9999'))
 // let thousand = 0
 // let hundred = 0
 // let ten = 0
 // let unit = 0
-
 
 // thousand = ((inputNum % 10000) - (inputNum % 1000)) / 1000
 
@@ -41,7 +41,8 @@
 
 // alert(`В числе ${inputNum} количество тысяч: ${thousand}, сотен: ${hundred}, десятков: ${ten}, единиц: ${unit}`);
 
-// Второе решение
+
+// ВТОРОЕ РЕШЕНИЕ
 
 // let str = prompt('Введите число не больше 9999')
 // let arr = str.split('')
