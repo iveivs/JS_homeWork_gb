@@ -44,17 +44,19 @@
 
 // ВТОРОЕ РЕШЕНИЕ
 
-let str = prompt('Введите число не больше 9999')
-let arr = str.split('')
+// let str = prompt('Введите число не больше 9999')
+// let arr = str.split('')
 
-if(arr.length === 4 ) {
-    alert(`В числе ${str} количество тысяч: ${arr[0]}, сотен: ${arr[1]}, десятков: ${arr[2]}, единиц: ${arr[3]}`);
-} else if (arr.length === 3 ) {
-    alert(`В числе ${str} количество сотен: ${arr[0]}, десятков: ${arr[1]}, единиц: ${arr[2]}`);
-} else if (arr.length === 2 ) {
-    alert(`В числе ${str} количество десятков: ${arr[0]}, единиц: ${arr[1]}`);
-} else if (arr.length === 1 ) {
-    alert(`В числе ${str} количество единиц: ${arr[0]}`);
-}
+// if(arr.length === 4 ) {
+//     alert(`В числе ${str} количество тысяч: ${arr[0]}, сотен: ${arr[1]}, десятков: ${arr[2]}, единиц: ${arr[3]}`);
+// } else if (arr.length === 3 ) {
+//     alert(`В числе ${str} количество сотен: ${arr[0]}, десятков: ${arr[1]}, единиц: ${arr[2]}`);
+// } else if (arr.length === 2 ) {
+//     alert(`В числе ${str} количество десятков: ${arr[0]}, единиц: ${arr[1]}`);
+// } else if (arr.length === 1 ) {
+//     alert(`В числе ${str} количество единиц: ${arr[0]}`);
+// }
 
+setTimeout(function() {
 
+}, 1500)
