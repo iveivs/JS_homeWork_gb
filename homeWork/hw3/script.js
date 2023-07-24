@@ -11,7 +11,7 @@
 // if (!Number.isInteger(inputUserNum)) {
 //     alert('Введите корректные данные')
 // } else {
-//     alert(inputUserNum - (inputUserNum * 0.13))
+//     alert("Размер заработной платы за вычетом налогов равен: " + (inputUserNum - (inputUserNum * 0.13)))
 // }
 
 
