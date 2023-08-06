@@ -77,13 +77,35 @@ class Bank {
     }
     displayInfoClient() {
         for(let key of this.accountList){
-            if(key.client === 'Мария'){
+            if(key.client){
                 console.log(key);
             }
         }
     }
-    deposit(amount) {
-        
+    deposit(name, amount) {
+        for(let key of this.accountList) {
+            if(key.client === name){
+                key.balance += amount
+            }
+        }
+    }
+    withdraw(name, amount) {
+        for(let key of this.accountList) {
+            if(key.client === name){
+                if (amount > key.balance) {
+                    console.log('operation cannot be performed');
+                } else {
+                    key.balance -= amount
+                }
+            }
+        }
+    }
+    checkBalance(name) {
+        for(let key of this.accountList){
+            if(name === key.client){
+                console.log('Balance is ' + key.balance);
+            }
+        }
     }
 }
 
@@ -99,19 +121,19 @@ const client1 = new Client("Иван", 25);
 const client2 = new Client("Мария", 30);
 
 const bank = new Bank("Мой Банк");
-bank.addClient(client1)
-// console.log(bank);
 
+bank.addClient(client1)
 bank.openAccount(client1.name, 500)
-// console.log(bank);
 
 
 bank.addClient(client2)
 bank.openAccount(client2.name, 1000)
-// console.log(bank);
 
+bank.deposit("Мария", 500)
+
+bank.withdraw("Иван", 33)
 bank.displayInfoClient()
 
-console.log(bank.accountList);
+bank.checkBalance("Иван")
 
 
