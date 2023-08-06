@@ -49,15 +49,15 @@
 // console.log(alert("Результат равен: " + mult(num1, num2)));
 
 // Деление
-// function dev(a, b) {
-//     let result = 0
-//     if ((a === 0) || (b === 0)) {
-//         alert('Некорректное значение')
-//     } else {
-//         result = a / b 
-//     }
-//     return result
-// }
+function dev(a, b) {
+    let result = 0
+    if ((a === 0) || (b === 0)) {
+        alert('Некорректное значение')
+    } else {
+        result = a / b 
+    }
+    return result
+}
 
 // console.log(alert('Результат деления: ' + dev(num1, num2)));
 
