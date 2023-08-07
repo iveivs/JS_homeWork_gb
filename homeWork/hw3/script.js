@@ -45,7 +45,7 @@
 
 
 // Умножение
-// const mult = (a,b) => a * b
+const mult = (a,b) => a * b
 // console.log(alert("Результат равен: " + mult(num1, num2)));
 
 // Деление

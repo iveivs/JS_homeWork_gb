@@ -9,7 +9,7 @@ class Book {
         console.log('Title:',this.title, ",", "Author:", this.author, ",", "Pages:", this.pages);
     }
 }
-// const someBook = new Book()
+const someBook = new Book()
 // someBook.displayInfo()
 // setTimeout(someBook.displayInfo, 2000)
 //  - - - - - - - - - - - - - - - - - - - -
