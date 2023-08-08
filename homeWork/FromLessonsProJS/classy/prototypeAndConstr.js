@@ -406,3 +406,72 @@ function Rumba(serailNumber) {
 // которую можно использовать - в качестве первого аргумента можно передать null
 // и тогда будет создан объект без прототипа. Давайте посмотрим на примере, зачем
 // нам это нужно:
+
+// Создадим робот пылесосSamba.
+const Gamba1 = new Mamba(101);
+// Попробуем обратиться к стандартному методу toString, хоть мы
+// его и не объявляли ни в одном из объектов.
+console.log(Samba1.toString()); // [object Object]
+
+// Хоть мы и не объявляли метод toString в нашей цепочки объектов, но он
+// присутствует и идёт от самого первого объекта (базового), т.к. его прототип - это
+// сам объект Object, и метод toString пришел от него. Иногда бывает так, что нам
+// совсем не нужны чужие методы, и не нужен прототип в объекте, потому что
+// обращение к свойствам объекта определяются тем, что напишет пользователь, и
+// пользователь может запросить свойство toString, которое мы не хотели бы
+// показывать, и вот тут как раз можно использовать метод Object.create:
+
+// Создадим пустой объект без прототипа.
+const Gamba123 = Object.create(null);
+// Попробуем обратиться к стандартному методу toString и
+// посмотреть на свойство __proto__
+console.log(Gamba123.toString); // undefined
+console.log(Gamba123.__proto__); // undefined
+// ==============================================
+
+// Создание объектов и наследование с использованием class и extends.
+
+// Мы научились создавать объекты и устанавливать прототипы, создавать
+// конструкторы и разобрались как работает оператор new. С приходом ES2015 в язык
+// был добавлен синтаксис классов, чтобы все эти операции можно было делать
+// удобнее и в более привычном синтаксисе для тех, кто уже программировал с
+// использованием классов в других языках программирования. Давайте создадим
+// наших роботов с использованием нового синтаксиса.
+
+// Класс робот-пылесос.
+class VacuumCleaner123 {
+    model = "vacuum cleaner";
+    counterOfStarts = 0;
+    isFull = false;
+    isObstacle = false;
+    // Для создания конструктора, нужно создать метод constructor.
+    constructor() {
+    }
+    startCleaning() {
+    this.counterOfStarts++;
+    // Добавим дополнительный вывод, чтобы знать чей метод мы вызвали.
+    console.log('I am the method of VacuumCleaner');
+    console.log('I am cleaning... I have been started: ',
+    this.counterOfStarts, 'times.');
+    }
+    goCharge() {
+    // Добавим дополнительный вывод, чтобы знать чей метод мы вызвали.
+    console.log('I am the method of VacuumCleaner');
+    console.log('I am going to charge...');
+    }
+    }
+    // Попробуем создать экземпляр класса и посмотреть как он работает.
+    const BaseRobot = new VacuumCleaner123;
+
+    console.log(BaseRobot.constructor); // class VacuumCleaner {
+// model = "vacuum cleaner";
+// counterOfStarts = 0;
+// isFull = false;
+// isObstacle = false;
+// Для создания конструктора, нужно создать метод constructor.
+// constructor() {
+// }
+// ...
+console.log(BaseRobot.model); // vacuum cleaner
+console.log(BaseRobot.startCleaning()); // I am the method of VacuumCleaner123
+// I am cleaning... I have been started: 1 times.
