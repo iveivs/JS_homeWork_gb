@@ -194,5 +194,3 @@ student2.setAge = 33
 student2.setAverageGrade = 100
 student2.displayInfo()
 
-// const student3 = new Student2(123, 333, 'sadDsa');
-// console.log(student3);
