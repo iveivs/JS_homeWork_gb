@@ -30,7 +30,8 @@ try {
     btns.forEach((elem, index) => {
         elem.addEventListener('click', () => {
             const delBox = document.getElementById(index)
-            delBox.innerHTML = ' '
+            // delBox.innerHTML = ' ' // очищает всё внутри блока
+            delBox.remove() // удаляет элемент целиком
             localStorage.removeItem(index)
         }) 
     })

@@ -246,4 +246,19 @@ console.log(totalTime2);
 // console.log(arraySumm);
 // ========================================
 
+// Пример Сани Трифонова
+// let d = document.getElementById("result")
+
+// let c = 0 
+// function func() {
+//   c++;
+//   d.innerHTML += "<br/>" + c;
+
+//   if(c==3) {
+//     clearInterval(id)
+//   }
+// }
+
+
+// let id = setInterval(func, 1000)
 
