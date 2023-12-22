@@ -49,23 +49,19 @@ class Manager {
   constructor() {
   }
 
-  newOrder(client, ...order) {
+  clientData = new Map()
 
+  newOrder(client, ...order) {
     let {firstname, lastname} = client
     console.log(`Клиент ${ firstname } заказал:`);
 
-    const newOrder = {
-      firstname,
-      lastname,
-      orderInfo: []
-    }
+    this.clientData.set("name", firstname)
+    console.log(this.clientData);
 
     for(let item of order){
       let {name, quantity, type} = item
-      console.log(` ${type} "${name}" - ${quantity}; готовит повар ${cheefs.get(type)}`);
-      newOrder.orderInfo.push(`${type} ${name} ${quantity}`)
+      console.log(` ${type} "${name}" - ${quantity}; готовит повар ${cheefs.get(type)}`); 
     }
-    console.log(newOrder);
   }
 }
 
@@ -116,3 +112,9 @@ manager.newOrder(
 // );
 // Ничего не должно быть добавлено, должна быть выброшена ошибка:
 // Десерт "Трубочка с вареной сгущенкой" - такого блюда не существует.
+
+// - - - - - - - - - - - - - - - - - -
+// Для того чтобы хранить данные о посетителях, стоит создать отдельную структуру, вроде Map внутри класса Manager. 
+// Нужно проверять, если был уже такой клиент, то мы должны добавлять заказы, если не было, то просто создать нового. 
+// Ну а после уже выводить то что в этой структуре по данному клиенту.
+// menu и cheefs нужно передавать в конутруктор Manager'а.
