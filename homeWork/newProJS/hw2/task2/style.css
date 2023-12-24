@@ -1,0 +1,28 @@
+h1 {
+    font-size: 22px;
+}
+nav {
+    padding: 0 1rem;
+}
+.card {
+    border: 1px solid #ccc;
+    width: 800px;
+    padding: 10px;
+    display: flex;
+    margin-left: 20px;
+    
+}
+.card__img img{
+    width: 50%;
+    
+}
+.card__img {
+    width: 50%;
+    /* text-align: center; */
+}
+.card__title {
+    font-size: 20px;
+}
+.card__info {
+    width: 500px;
+}
