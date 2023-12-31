@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интерактивный магазин мебели</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f3f4f6;
+        padding: 20px;
+      }
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+    <script src="sem3_task2.js" defer></script>
+  </head>
+  <!--  -->
+  <body>
+    <h1>Создайте свой мебельный гарнитур</h1>
+
+    <div class="furniture-option">
+      <h2>Стол</h2>
+      <label>
+        Цвет:
+        <select id="table-color">
+          <option value="brown">Коричневый</option>
+          <option value="white">Белый</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="furniture-option">
+      <h2>Стул</h2>
+      <label>
+        Материал:
+        <select id="chair-material">
+          <option value="wood">Дерево</option>
+          <option value="metal">Металл</option>
+        </select>
+      </label>
+    </div>
+
+    <button id="save-btn">Сохранить комплект</button>
+    <button id="load-btn">Загрузить последний комплект</button>
+    <button id="clear-btn">Очистить настройки</button>
+  </body>
+</html>

@@ -67,15 +67,15 @@ class Library {
     }
 }
 
-const item1 = new Library(["book1", "book2", "book3"])
-console.log({item1});
-item1.findDuplicates()
-item1.allBooks()
-item1.addBook("book2")
-item1.allBooks()
-item1.addBook("book4")
-item1.allBooks()
-item1.removeBook("book5")
-item1.removeBook("book4")
-item1.allBooks()
-console.log(item1.hasBook("book2"));
+const item1 = new Library(["book1", "book2", "book3", "book2"])
+// console.log({item1});
+console.log(item1.findDuplicates());
+// item1.allBooks()
+// item1.addBook("book2")
+// item1.allBooks()
+// item1.addBook("book4")
+// item1.allBooks()
+// item1.removeBook("book5")
+// item1.removeBook("book4")
+// item1.allBooks()
+// console.log(item1.hasBook("book2"));

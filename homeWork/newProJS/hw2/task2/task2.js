@@ -60,7 +60,7 @@ const initialData = [
 
 const container = document.querySelector('.container')
 
-function card(obj, index) {
+function cardTemplate(obj, index) {
   return `
   <div class="card" >
       <div class="card__img">
@@ -84,35 +84,33 @@ function card(obj, index) {
   `
 } 
 
-function render () {
+function render() {
   container.insertAdjacentHTML('beforeend', initialData.map((elem, index) => {
-    return card(elem, index)
-  } 
-).join( " ")
-)
+    return cardTemplate(elem, index)
+  }
+  ).join(" ")
+  )
 }
 render()
 
-const textAreaList = document.querySelectorAll('.card__textarea')
 
-textAreaList.forEach(area => {
-  area.addEventListener('keydown', (e) => {
+container.addEventListener('keydown', (e)=> {
+  if(e.target.closest('textarea')){
     const value = e.target.value
     const newReview = {}
     const dataIndex = e.target.dataset.index
-    
-  if (e.key === 'Enter' && value.length >= 5 && value.length < 500) {
-    newReview.text = value
-    newReview.id = Date.now()
-    initialData[dataIndex].reviews.push(newReview)
-    container.innerText = ''
-    render()
-  } else if(e.key === 'Enter' && value.length < 5 ) {
-    alert('Отзыв должен содержать не менее 5 символов')
-  } else if(e.key === 'Enter' && value.length > 500 ) {
-    alert('Отзыв должен содержать не более 500')
+    if (e.key === 'Enter' && value.length >= 5 && value.length < 500) {
+            newReview.text = value
+            newReview.id = Date.now()
+            initialData[dataIndex].reviews.push(newReview)
+            container.innerText = ''
+            render()
+          } else if (e.key === 'Enter' && value.length < 5) {
+            alert('Отзыв должен содержать не менее 5 символов')
+          } else if (e.key === 'Enter' && value.length > 500) {
+            alert('Отзыв должен содержать не более 500')
+          }
   }
-  })
 })
 
 
