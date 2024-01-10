@@ -7,6 +7,7 @@
 //   }
   
 // }
+// - - - - - - - - -
 
 // setTimeout(showNumber, 1000, 1)
 const values = [1, 100, 5, 6, 13, 13, 22, 5];
@@ -17,6 +18,8 @@ console.log(index); // index - индекс элемента массива
 console.log(numbers); // numbers - представление массива values
 return numbers.indexOf(number) !== index;
 });
+
+
 
 
 
