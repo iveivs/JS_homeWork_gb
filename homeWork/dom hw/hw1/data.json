@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Cycling",
+        "time": "12:00",
+        "max": 16,
+        "current": 10
+    },
+    {
+        "id": 2,
+        "title": "Karate",
+        "time": "15:00",
+        "max": 25,
+        "current": 24
+    },
+    {
+        "id": 3,
+        "title": "Box",
+        "time": "20:00",
+        "max": 10,
+        "current": 8
+    },
+    {
+        "id": 4,
+        "title": "Aerobic",
+        "time": "18:00",
+        "max": 25,
+        "current": 14
+    } 
+]
