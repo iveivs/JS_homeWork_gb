@@ -1,0 +1,60 @@
+.content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.visible {
+        opacity: 1;
+        max-height: 500px;
+        /* Высота контента при отображении */
+        transition: all 0.3s ease;
+    }
+/* стили для прелоадера */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loader .fa-spinner{
+    font-style: 48px;
+    color: #333;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.hidden {
+    display: none;
+}
+.content1 img {
+    width: 400px;
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.open-modal-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.open-modal-btn:hover {
+    opacity: 0.8;
+}

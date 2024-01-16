@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Сортировка -->
+    <div class="price">
+        <h3>price</h3>
+        <div data-price="25">Товар 1</div>
+        <div data-price="50"> Товар 2</div>
+        <div data-price="75">Товар 3</div>
+        <div data-price="100">Товар 4</div>
+    </div>
+    <hr>
+    <!-- Сортировка -->
+    <div class="rating">
+        <h3>rating</h3>
+        <div data-rating="1">Товар 1</div>
+        <div data-rating="3"> Товар 2</div>
+        <div data-rating="5">Товар 3</div>
+        <div data-rating="2">Товар 4</div>
+    </div>
+    <hr>
+    <input type="checkbox" id="toggleCheckbox">
+    <label for="toggleCheckbox">Показать / Скрыть контент</label>
+
+    <div class="content">
+        <h1>Title</h1>
+        <h2>Some content</h2>
+    </div>
+    <hr>
+    <!-- Spisok(vsplytie) -->
+    <h5>всплытие событий</h5>
+    <ul id="list">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+    </ul>
+    <hr>
+    <!-- Preloader -->
+    <div class="loader">
+        <img src="./spinner.svg" class="fas fa-spinner" alt="">
+    </div>
+
+    <div class="content1 hidden">
+        <h1>Some title 2</h1>
+        <h2>Some content 2</h2>
+        <img src="https://static.tildacdn.com/tild6433-3664-4339-b866-346164356634/a0041033511_10.jpg" alt="">
+    </div>
+    <!-- модальное окно -->
+    <button class="open-modal-btn">Открыть модальное окно</button>
+
+    <div id="modal">
+        <h3>Modal window</h3>
+        <p>Click outside the window to close it</p>
+    </div>
+    <br>
+    <hr>
+
+    <!-- пользовательское событие -->
+    <button id="btn">Click me</button>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
