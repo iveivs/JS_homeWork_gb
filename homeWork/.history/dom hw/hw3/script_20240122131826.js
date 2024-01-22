@@ -69,7 +69,7 @@ const fetchPhoto = async () => {
 const toHtml = () => {
     return `
     <div>
-        <h5>Photo by: <span class="orange-text">${state.user.name}</span> </h5>
+        <h5>Photo by: <span></span> </h5>
         <div class="likes"> 
             <i id="material-icons" class="material-icons" >favorite_border</i> 
             <p>${state.likes}</p>
