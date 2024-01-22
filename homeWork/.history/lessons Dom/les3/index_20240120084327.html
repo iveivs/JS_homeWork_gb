@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form name="superForm">
+        <input name="first" type="text" value="SomeValue1">
+        <input name="second" type="text" value="SomeValue2">
+    </form>
+    <br>
+    <form name="superForm2">
+        <input name="third" type="text" value="SomeValue3">
+        <input name="fourth" type="text" value="SomeValue4">
+    </form>
+    <hr>
+    <form name="superForm3">
+        <select name="selectForm" multiple>
+            <option value="Lorem" selected>Лорем</option>
+            <option value="Ipsum" selected>Ипсум</option>
+            <option value="Dolor">Долор</option>
+        </select>
+    </form>
+    <hr>
+        <!-- // Задача
+        Вы разрабатываете приложение для выбора и отображения данных о странах. У вас есть форма включающая элемент select,
+        в котором пользователь может выбрать определённую страну. При выборе страны, вам необходимо динамически обновлять другой элемент на странице,
+        например изображать информацию о столице страны -->
+        <h2>Выберите страну:</h2>
+        <form id="country-form">
+            <select name="" id="country-select">
+                <option value="">Выберите страну</option>
+                <option value="argentina">Аргентина</option>
+                <option value="janmaica">Ямайка</option>
+                <option value="mozambic">Мозамбик</option>
+            </select>
+        </form>
+
+        <h3>Столица:</h3>
+        <p id="capital-info">Выберите страну, чтоб узнать столицу</p>
+        <hr>
+        <h2>Сортировка товаров</h2>
+        <label for="sort-select">Сортировка</label>
+        <select id="sort-select">
+            <option value="asc">По возрастанию цены</option>
+            <option value="desc">По убываню цены</option>
+        </select>
+        <ul>
+            <li class="product-item">Товар 1 = $</li>
+            <li class="product-item">Товар 2 = $</li>
+            <li class="product-item">Товар 3 = $</li>
+            <li class="product-item">Товар 4 = $</li>
+        </ul>
+    <script src="script.js"></script>
+</body>
+
+</html>

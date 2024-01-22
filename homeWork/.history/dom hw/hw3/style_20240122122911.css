@@ -1,0 +1,49 @@
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.title {
+  padding-left: 20px;
+  
+}
+.photo-container {
+  padding: 20px;
+}
+
+.material-icons.orange600 { 
+  color: #FB8C00; 
+}
+
+.history-list {
+  margin: 20px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.history-item {
+  object-fit: cover;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10PX;
+}
+.history-item img {
+  object-fit: cover;
+  width: 300px;
+  height: 460px;
+}
+
+.red {
+  color: red;
+}
+
+.photo-container img {
+    height: calc(80vh - 100px);
+}
+
+  
+  
